@@ -2,10 +2,13 @@
 # Calculator
 This is a simple calculator application built using the Python tkinter library. It can perform basic arithmetic operations as well as trigonometric functions.
 # Features
-*Basic arithmetic operations: addition, subtraction, multiplication, and division
-*Trigonometric functions: sin, cos, and tan
-*Exponentiation: ^
-*Clear button: AC
-*Delete button: DEL
-*Error handling for invalid input
-
+* Addition, subtraction, multiplication, and division
+* Trigonometric functions: sin, cos, and tan
+* Exponential function: a^b
+* Clear button: clears the result field
+* Delete button: deletes the last character from the result field
+# Requirements
+* Python 3
+* tkinter library
+# Credits
+This project was created as part of an internship with CodeClause.
