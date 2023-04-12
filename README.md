@@ -1,4 +1,4 @@
-## This is an internship task 1 of Codeclause for the role of Python intern.  
+## This is Task 2 of Codeclause's internship program for the position of Python intern
 # Calculator
 This is a simple calculator application built using the Python tkinter library. It can perform basic arithmetic operations as well as trigonometric functions.
 # Features
