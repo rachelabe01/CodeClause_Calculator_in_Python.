@@ -5,21 +5,21 @@ class Calculator:
     def __init__(self, master):
         self.master = master
         self.master.title("Calculator")
-        self.master.config(bg="#7B3F00") # Set the background color of the calculator
+        self.master.config(bg="#000000") # Set the background color of the calculator
         
         # Create a frame to hold the display and buttons
-        self.main_frame = tk.Frame(self.master, padx=10, pady=10, bg="#7B3F00")
+        self.main_frame = tk.Frame(self.master, padx=10, pady=10, bg="#000000")
         self.main_frame.pack(expand=True, fill=tk.BOTH)
         
         # Create a variable to hold the result
         self.result_var = tk.StringVar(value="")
         
         # Create a label to display the result
-        self.result_label = tk.Label(self.main_frame, textvariable=self.result_var, font=("Arial", 24), bg="#7B3F00", fg="white")
+        self.result_label = tk.Label(self.main_frame, textvariable=self.result_var, font=("Arial", 24), bg="#000000", fg="white")
         self.result_label.pack(expand=True, fill=tk.BOTH)
         
         # Create a frame to hold the buttons
-        self.buttons_frame = tk.Frame(self.main_frame, bg="#7B3F00")
+        self.buttons_frame = tk.Frame(self.main_frame, bg="#000000")
         self.buttons_frame.pack(expand=True, fill=tk.BOTH)
         
         # Create a list of buttons
@@ -66,9 +66,9 @@ class Calculator:
         # Create the buttons and add them to the frame
         for button in buttons:
             if button == "":
-                tk.Label(self.buttons_frame, text=" ", font=("Arial", 12), width=5, height=2, bg="#7B3F00").grid(row=6, column=3)
+                tk.Label(self.buttons_frame, text=" ", font=("Arial", 12), width=5, height=2, bg="#000000").grid(row=6, column=3)
             else:
-                tk.Button(self.buttons_frame, text=button, font=("Arial", 12), width=5, height=2, command=lambda button=button: button_click(button), bg="#FFFDD0", fg="#7B3F00").grid(row=buttons.index(button)//4, column=buttons.index(button)%4)
+                tk.Button(self.buttons_frame, text=button, font=("Arial", 12), width=5, height=2, command=lambda button=button: button_click(button), bg="#FFFFFF", fg="#000000").grid(row=buttons.index(button)//4, column=buttons.index(button)%4)
         
 # Create the application
 root = tk.Tk()
